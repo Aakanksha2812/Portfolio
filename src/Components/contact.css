@@ -1,0 +1,84 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Jost", sans-serif;
+}
+.card-div{
+    
+    height: 70vh;
+    display: flex;
+    justify-content: center;
+    padding: 3rem;}
+    .ultag{
+        font-size: medium;
+        font-family: sans-serif;
+    }
+    h5{
+        font-size:medium;
+        font-family: sans-serif;
+    }
+    .a-text{
+        font-size: medium;
+        font-family: sans-serif;
+    }
+    .flexbox{
+        display: flex;
+    }
+
+.card-header{
+font-size: 30px;
+font-family: sans-serif;
+}
+/*      margin-top: 100px;
+    margin-bottom: 100px;
+    margin-right: 150px;
+    margin-left: 80px;*/
+
+/*
+.c
+{
+height:100vh;
+position:relative
+}
+.c-left{
+flex:1;
+}
+.c-right{
+    flex: 1;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.c-wrapper{
+   /* padding:50px;
+    display: flex;
+}
+.c-info-item {
+    display: flex;
+    align-items: center;
+    margin: 50px 0px;
+    font-weight: 300;
+    width:70%;
+    justify-content: center;
+}
+@media screen and (max-width: 480px) {
+    .c-wrapper {
+      flex-direction: column;
+      padding: 0px 50px;
+    }
+  
+    .c-title {
+      font-size: 30px;
+    }
+  
+    .c-info-item {
+      margin: 20px 0px;
+      width: 100%;
+    }
+  
+    
+  }*/
+    
