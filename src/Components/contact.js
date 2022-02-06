@@ -1,91 +1,75 @@
-import React from "react";
-
-import { AiFillLinkedin, AiFillGithub } from "react-icons/ai";
-import {
-  FaEnvelopeOpenText,
-  FaCss3,
-  FaReact,
-  FaBootstrap,
-  FaNodeJs,
-} from "react-icons/fa";
 
 import "./contact.css";
-function contact() {
+//import Phone from "../../img/phone.png";
+//import Email from "../../img/email.png";
+//import Address from "../../img/address.png";
+import { useContext, useRef, useState } from "react";
+//import emailjs from "emailjs-com";
+/*import { ThemeContext } from "../../context";*/
+
+const Contact = () => {
+  const formRef = useRef();
+  const [done, setDone] = useState(false)
+ /* const theme = useContext(ThemeContext);
+  const darkMode = theme.state.darkMode;*/
+
+ /* const handleSubmit = (e) => {
+    e.preventDefault();
+    emailjs
+      .sendForm(
+        "service_rrvnzco",
+        "template_3v5nih4",
+        formRef.current,
+        "user_DrriDPTGKO2Zj4RDXCA6W"
+      )
+      .then(
+        (result) => {
+          console.log(result.text);
+          setDone(true)
+        },
+        (error) => {
+          console.log(error.text);
+        }
+      );
+  };*/
+
   return (
-   /* <div className="c">
+    <div className="c">
       <div className="c-bg"></div>
       <div className="c-wrapper">
         <div className="c-left">
-          <div className="c-title">Contact Me</div>
+          <h1 className="c-title">Contact Me</h1>
           <div className="c-info">
             <div className="c-info-item">
-            <div>
-              <a href="shindeaakanksha28@gmail.com" className="icon-button3">
-                <FaEnvelopeOpenText size={40} style={{ color: "#3498db" }} />
-              </a>
+              <img  alt="" className="c-icon" />
+              +1 1234 556 75
             </div>
-            <div>
-              <a
-                href="https://www.linkedin.com/in/aakanksha-shinde-a32205216"
-                className="icon-button2"
-              >
-                <AiFillLinkedin size={50} style={{ color: "#0e76a8" }} />
-              </a>
-              </div>
+            <div className="c-info-item">
+              <img className="c-icon"  alt="" />
+              shindeaakanksha28@gmail.com
             </div>
-            <div>
-            <a href="https://drive.google.com/file/d/1-yaTG0X5ntmcQEb9I_zGAbj4Sfgwaaok/view?usp=sharing">
-                <button className="btn btn-primary"> MY Resume</button>
-              </a>
+            <div className="c-info-item">
+              <img className="c-icon"  alt="" />
+              at post rase
             </div>
           </div>
         </div>
+        <div className="c-right">
+          <p className="c-desc">
+            <b> Get in touch.</b>
+          </p>
+          <form /*ref={formRef} onSubmit={handleSubmit}*/>
+            <input /*style={{backgroundColor: darkMode && "#333"}}*/ type="text" placeholder="Name" name="user_name" />
+            <input /*style={{backgroundColor: darkMode && "#333"}}*/ type="text" placeholder="Subject" name="user_subject" />
+            <input /*style={{backgroundColor: darkMode && "#333"}}*/ type="text" placeholder="Email" name="user_email" />
+            <textarea /*style={{backgroundColor: darkMode && "#333"}}*/ rows="5" placeholder="Message" name="message" />
+            <button>Submit</button>
+            
+          </form>
+        </div>
       </div>
     </div>
-    <div class="card" style="width: 18rem;">
-  <div class="card-body">
-    <h5 class="card-title">Card title</h5>
-    <h6 class="card-subtitle mb-2 text-muted">Card subtitle</h6>
-    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-    <a href="#" class="card-link">Card link</a>
-    <a href="#" class="card-link">Another link</a>
-  </div>
-</div>*/
-<div className="card-div">
-<div class="card">
-  <div class="card-header">
-    Contact 
-  </div>
-  <div class="card-body">
-    <h5 class="card-title">Contact Me</h5>
-    <p class="card-text">
-    <div>
-                    <ul className="ultag">
-                      <li>
-                      <div>
-              <a href="shindeaakanksha28@gmail.com" className="icon-button3">
-                <FaEnvelopeOpenText size={40} style={{ color: "#3498db" }} />
-              </a>
-              shindeaakanksha28@gmail.com
-            </div>
-                      </li>
-                      <li>
-                      <div>
-              <a
-                href="https://www.linkedin.com/in/aakanksha-shinde-a32205216"
-                className="icon-button2"
-              >
-                <AiFillLinkedin size={50} style={{ color: "#0e76a8" }} />
-              </a>
-              </div>
-                      </li>
-                      
-                    </ul>
-                  </div>
-    </p>
-    <a href="https://drive.google.com/file/d/1-yaTG0X5ntmcQEb9I_zGAbj4Sfgwaaok/view?usp=sharing" class="btn btn-primary">Resume</a>
-  </div>
-</div></div>
   );
-}
-export default contact;
+};
+
+export default Contact;

@@ -11,6 +11,7 @@ import {
   FaBootstrap,
   FaNodeJs,
 } from "react-icons/fa";
+import {AiOutlineMail} from 'react-icons/ai';
 import homeimg from "../Assets/homeimage.jpeg";
 import Typical from "react-typical";
 import { AiFillHtml5 } from "react-icons/ai";
