@@ -17,7 +17,7 @@
     list-style: none;
   }
   
-  /* 
+  
    
   /* navbar style start  */
   
@@ -28,6 +28,7 @@
     grid-template-columns: 10rem 1fr 2fr 1fr 10rem;
     /*box-shadow: rgba(50, 50, 93, 0.25) 0px 20px 40px -30px,
       rgba(0, 0, 0, 0.3) 0px 30px 60px -30px;*/
+      
   }
   .menu-link {
     grid-column: 1/4;
@@ -52,4 +53,7 @@
     color: rgba(0, 0, 3, 1);
     text-decoration: underline;
     transition: 0.5s;
+  }
+  .resume{
+    right: 100%;
   }

@@ -50,12 +50,7 @@ function home() {
               I design and develop website. i like to work on HTML,CSS,Javascript,React,nodejs
             </p>
             <div className="social-media">
-              <a
-                href="https://github.com/Aakanksha2812"
-                className="icon-button1"
-              >
-                <AiFillGithub size={50} style={{ color: "black" }} />
-              </a>
+           
 
               <a
                 href="https://www.linkedin.com/in/aakanksha-shinde-a32205216"
@@ -63,16 +58,18 @@ function home() {
               >
                 <AiFillLinkedin size={50} style={{ color: "#0e76a8" }} />
               </a>
-
+              <a
+                href="https://github.com/Aakanksha2812"
+                className="icon-button1"
+              >
+                <AiFillGithub size={50} style={{ color: "black" }} />
+              </a>
               <a href="shindeaakanksha28@gmail.com" className="icon-button3">
                 <FaEnvelopeOpenText size={40} style={{ color: "#3498db" }} />
               </a>
             </div>
-            <div className="resume">
-              <a href="https://drive.google.com/file/d/1-yaTG0X5ntmcQEb9I_zGAbj4Sfgwaaok/view?usp=sharing">
-                <button className="btn btn-primary"> MY Resume</button>
-              </a>
-            </div>
+            
+            
           </div>
         </div>
         <div className="i-right">
