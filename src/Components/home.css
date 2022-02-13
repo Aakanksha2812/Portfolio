@@ -92,7 +92,7 @@
     top: 0;
     right: 0;
   }
- /* 
+ 
   @media screen and (max-width: 480px) {
     .i {
       flex-direction: column;
@@ -152,5 +152,5 @@
     margin-left: 200px;
     margin-right: 200px;
     
-  /*  margin: 25px 50px 100px 100px;
-}*/
+  /*  margin: 25px 50px 100px 100px;*/
+}

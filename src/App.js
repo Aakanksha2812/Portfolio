@@ -5,7 +5,7 @@ import home from './Components/home';
 import contact from './Components/contact';
 import project from './Components/project';
 import about from './Components/about';
-import footer from './Components/footer';
+import Footer from './Components/footer';
 function App() {
   return (
     <div className="App">
@@ -19,7 +19,7 @@ function App() {
         
       </Switch>
       </BrowserRouter>
-      <footer/>
+      <Footer/>
     </div>
     
    
