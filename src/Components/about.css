@@ -37,8 +37,13 @@
   .resume{
     font:bold;
   }
+  h2{
+    justify-content: center;
+    
+
+  }
   .a-text{
       font-size: medium;
       font-family: sans-serif;
-      justify-content: center;
+     justify-content: center;
   }
