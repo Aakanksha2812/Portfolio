@@ -1,4 +1,3 @@
-
 import "./contact.css";
 //import Phone from "../../img/phone.png";
 //import Email from "../../img/email.png";
@@ -6,14 +5,15 @@ import "./contact.css";
 import { useContext, useRef, useState } from "react";
 //import emailjs from "emailjs-com";
 /*import { ThemeContext } from "../../context";*/
+import emailjs from "emailjs-com";
 
 const Contact = () => {
   const formRef = useRef();
-  const [done, setDone] = useState(false)
- /* const theme = useContext(ThemeContext);
+  const [done, setDone] = useState(false);
+  /* const theme = useContext(ThemeContext);
   const darkMode = theme.state.darkMode;*/
 
- /* const handleSubmit = (e) => {
+  /* const handleSubmit = (e) => {
     e.preventDefault();
     emailjs
       .sendForm(
@@ -32,7 +32,26 @@ const Contact = () => {
         }
       );
   };*/
+  function handleSubmit(e) {
+    e.preventDefault();
 
+    emailjs
+      .sendForm(
+        "service_92zesdc",
+        "template_37m0g2i",
+        e.target,
+        "8dds32JIWBE-ljXrj"
+      )
+      .then(
+        (result) => {
+          console.log(result.text);
+        },
+        (error) => {
+          console.log(error.text);
+        }
+      );
+    e.target.reset();
+  }
   return (
     <div className="c">
       <div className="c-bg"></div>
@@ -41,15 +60,15 @@ const Contact = () => {
           <h1 className="c-title">Contact Me</h1>
           <div className="c-info">
             <div className="c-info-item">
-              <img  alt="" className="c-icon" />
+              <img alt="" className="c-icon" />
               +1 1234 556 75
             </div>
             <div className="c-info-item">
-              <img className="c-icon"  alt="" />
+              <img className="c-icon" alt="" />
               shindeaakanksha28@gmail.com
             </div>
             <div className="c-info-item">
-              <img className="c-icon"  alt="" />
+              <img className="c-icon" alt="" />
               at post rase
             </div>
           </div>
@@ -58,13 +77,28 @@ const Contact = () => {
           <p className="c-desc">
             <b> Get in touch.</b>
           </p>
-          <form /*ref={formRef} onSubmit={handleSubmit}*/>
-            <input /*style={{backgroundColor: darkMode && "#333"}}*/ type="text" placeholder="Name" name="user_name" />
-            <input /*style={{backgroundColor: darkMode && "#333"}}*/ type="text" placeholder="Subject" name="user_subject" />
-            <input /*style={{backgroundColor: darkMode && "#333"}}*/ type="text" placeholder="Email" name="user_email" />
-            <textarea /*style={{backgroundColor: darkMode && "#333"}}*/ rows="5" placeholder="Message" name="message" />
+          <form ref={formRef} onSubmit={handleSubmit}>
+            <input
+              /*style={{backgroundColor: darkMode && "#333"}}*/ type="text"
+              placeholder="Name"
+              name="name"
+            />
+            <input
+              /*style={{backgroundColor: darkMode && "#333"}}*/ type="text"
+              placeholder="Subject"
+              name="subject"
+            />
+            <input
+              /*style={{backgroundColor: darkMode && "#333"}}*/ type="text"
+              placeholder="Email"
+              name="email"
+            />
+            <textarea
+              /*style={{backgroundColor: darkMode && "#333"}}*/ rows="5"
+              placeholder="Message"
+              name="message"
+            />
             <button>Submit</button>
-            
           </form>
         </div>
       </div>
