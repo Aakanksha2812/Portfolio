@@ -1,9 +1,10 @@
 import React from "react";
 import "./home.css";
 import Navbar from "./Navbar";
-import footer from './footer'
+import footer from "./footer";
 import NavLink from "react-router-dom";
 import { AiFillLinkedin, AiFillGithub } from "react-icons/ai";
+import img1 from "../Assets/giphy.gif";
 import {
   FaEnvelopeOpenText,
   FaCss3,
@@ -11,7 +12,7 @@ import {
   FaBootstrap,
   FaNodeJs,
 } from "react-icons/fa";
-import { AiOutlineMail } from 'react-icons/ai';
+import { AiOutlineMail } from "react-icons/ai";
 import homeimg from "../Assets/homeimage.jpeg";
 import Typical from "react-typical";
 import { AiFillHtml5 } from "react-icons/ai";
@@ -47,17 +48,17 @@ function home() {
               </div>
             </div>
             <p className="i-desc text">
-              I design and develop website. i like to work on HTML,CSS,Javascript,React,nodejs
+              I design and develop website. i like to work on
+              HTML,CSS,Javascript,React,nodejs
             </p>
           </div>
         </div>
         <div className="i-right">
-          <div className="i-bg"></div>
+          <img src={img1} />
         </div>
       </div>
       <footer />
     </div>
-
   );
 }
 export default home;

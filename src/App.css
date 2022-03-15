@@ -1,0 +1,7 @@
+.toggle {
+  position: absolute;
+  right: 150px;
+  width: 100px;
+  height: 20px;
+  /*border: 3px solid green;*/
+}
